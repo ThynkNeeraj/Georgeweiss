@@ -1,28 +1,18 @@
-import React from "react";
+import homeImage from "@/assets/home-1-4 1.png";
+import maskImage from "@/assets/Mask group.png";
+import healthyImage from "@/assets/being-healthy-gets-me-excited-2025-04-06-08-20-35-utc.png";
 
-function Girl ()  {
+function Girl() {
   const items = [
-    {
-      img: "src/assets/home-1-4 1.png", // Replace with your image URL
-      text: "FACE & NECK",
-    },
-    {
-      img: "src/assets/Mask group.png",
-      text: "BODY",
-    },
-    {
-      img: "src/assets/being-healthy-gets-me-excited-2025-04-06-08-20-35-utc.png",
-      text: "RESHAPE YOUR LIFE",
-    },
+    { img: homeImage, text: "FACE & NECK" },
+    { img: maskImage, text: "BODY" },
+    { img: healthyImage, text: "RESHAPE YOUR LIFE" },
   ];
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 p-6">
       {items.map((item, i) => (
-        <div
-          key={i}
-          className="relative group overflow-hidden rounded-2xl shadow-lg"
-        >
+        <div key={i} className="relative group overflow-hidden rounded-2xl shadow-lg">
           <img
             src={item.img}
             alt={item.text}
@@ -37,6 +27,6 @@ function Girl ()  {
       ))}
     </div>
   );
-};
+}
 
 export default Girl;
