@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export function Left() {
     return (
-        <section className="h-full flex flex-col items-center justify-center px-6 py-12 text-center">
+        <section className="h-full flex flex-col items-center justify-center px-6 py-12 text-left">
             <div className="max-w-3xl">
                 <div className="mb-6">
                     <span className="bg-yellow-700 text-white text-xs font-semibold px-4 py-1 rounded tracking-widest">

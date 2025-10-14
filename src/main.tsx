@@ -5,7 +5,7 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div className="w-screen h-screen overflow-auto scrollbar-hide">
+    <div className="w-screen h-screen overflow-x-hidden scrollbar-hide">
       <App />
     </div>
   </StrictMode>
